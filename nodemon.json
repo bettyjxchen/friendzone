@@ -1,7 +1,6 @@
 {
   "watch": [
-      "app",
-      "./server.js"
+      "app"
   ],
   "ignore": [
       "content"

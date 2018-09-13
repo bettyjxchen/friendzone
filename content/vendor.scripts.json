@@ -1,0 +1,22 @@
+{
+    "chunks": {
+        "vendor": [
+            "jquery",
+            "bootstrap",
+            "angular",
+            "angular-ui-router",
+            "angular-bootstrap",
+            "angular-bootstrap-toggle",
+            "angular-cookies"
+        ]
+    },
+    "paths": {
+        "jquery": "content/libs/jquery/dist/jquery.min.js",
+        "bootstrap": "content/libs/bootstrap/dist/js/bootstrap.min.js",
+        "angular": "content/libs/angular/angular.min.js",
+        "angular-ui-router": "content/libs/angular-ui-router/release/angular-ui-router.min.js",
+        "angular-bootstrap": "content/libs/angular-bootstrap/ui-bootstrap-tpls.min.js",
+        "angular-bootstrap-toggle": "content/libs/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.js",
+        "angular-cookies": "content/libs/angular-cookies/angular-cookies.min.js"
+    }
+}
