@@ -3,7 +3,8 @@
   "main": "server.js",
   "version": "2.0.0",
   "scripts": {
-    "heroku-postbuild": "gulp prod"
+    "heroku-postbuild": "gulp prod",
+    "start": "node server.js"
   },
   "cacheDirectories": [
     "content/libs"
@@ -42,5 +43,17 @@
     "lodash": "^4.17.4",
     "merge-stream": "^1.0.1",
     "minimist": "^1.2.0"
-  }
+  },
+  "description": "This is the starter template for all Sabio cohort projects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bettyjxchen/friendzone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bettyjxchen/friendzone/issues"
+  },
+  "homepage": "https://github.com/bettyjxchen/friendzone#readme"
 }
