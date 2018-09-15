@@ -1,3 +1,4 @@
+/*global jQuery */
 /*jshint browser:true */
 /*!
 * FitVids 1.1

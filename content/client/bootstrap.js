@@ -5,5 +5,5 @@ $(function() {
     // moment.js default language
     // moment.locale('en')
 
-    // angular.bootstrap(document, ['client'], { strictDi: true })
+    angular.bootstrap(document, ['client'], { strictDi: true })
 });

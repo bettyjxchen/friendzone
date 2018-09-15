@@ -1,31 +1,27 @@
 {
   "name": "node-angular-starter",
-  "main": "index.js",
-  "version": "2.0.1",
+  "main": "server.js",
+  "version": "2.0.0",
   "scripts": {
     "heroku-postbuild": "gulp prod",
     "postinstall": "bower install",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "cacheDirectories": [
     "content/libs"
   ],
   "dependencies": {
-    "@sendgrid/mail": "^6.2.1",
-    "angular-bootstrap-toggle": "^0.1.2",
-    "angular-cookies": "^1.6.8",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.4.2",
-    "bower": "^1.8.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
-    "crypto": "^1.0.1",
     "dotenv": "^2.0.0",
     "express": "^4.16.2",
     "express-validator": "^3.1.2",
-    "joi": "^11.4.0",
+    "joi": "^11.1.1",
     "joi-objectid": "^2.0.0",
-    "mongodb": "^2.2.33",
+    "jquery": "^3.3.1",
+    "mongodb": "^2.2.31",
     "node-uuid": "^1.4.7"
   },
   "devDependencies": {
@@ -52,14 +48,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bettyjxchen/about.git"
+    "url": "git+https://github.com/bettyjxchen/where-to-study.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bettyjxchen/about/issues"
+    "url": "https://github.com/bettyjxchen/where-to-study/issues"
   },
-  "homepage": "https://github.com/bettyjxchen/about#readme",
+  "homepage": "https://github.com/bettyjxchen/where-to-study#readme",
   "description": ""
 }
