@@ -18,20 +18,56 @@
 					}
 				}
 			})
-			.state("site.neighborhood", {
-				url: "/neighborhood",
+			.state("site.about", {
+				url: "/about",
 				views: {
 					"content@site": {
-						templateUrl: "client/layout/site/neighborhood/neighborhood.html"
+						templateUrl: "client/layout/site/about/about.html"
+					}
+				}
+			})
+			.state("site.faq", {
+				url: "/faq",
+				views: {
+					"content@site": {
+						templateUrl: "client/layout/site/faq/faq.html"
 						//controller
 					}
 				}
 			})
-			.state("site.list", {
-				url: "/neighborhood/:neighborhood?area",
+			.state("site.careers", {
+				url: "/careers",
 				views: {
 					"content@site": {
-						templateUrl: "client/layout/site/list/list.html"
+						templateUrl: "client/layout/site/careers/careers.html"
+						//controller
+					}
+				}
+			})
+			.state("site.contact", {
+				url: "/contact",
+				views: {
+					"content@site": {
+						templateUrl: "client/layout/site/contact/contact.html"
+						//controller
+					}
+				}
+			})
+			.state("site.terms-and-conditions", {
+				url: "/terms-and-conditions",
+				views: {
+					"content@site": {
+						templateUrl:
+							"client/layout/site/terms-and-conditions/terms-and-conditions.html"
+						//controller
+					}
+				}
+			})
+			.state("site.404", {
+				url: "/404",
+				views: {
+					"content@site": {
+						templateUrl: "client/layout/site/others/404.html"
 						//controller
 					}
 				}
