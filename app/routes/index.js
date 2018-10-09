@@ -2,6 +2,7 @@ const router = require("express").Router();
 const authenticate = require("../filters/authenticate");
 const clientRoutes = require("./client.routes");
 const hackersRoutes = require("./hackers.routes");
+const contactMessagesRoutes = require("./contact_messages.routes");
 
 module.exports = router;
 
@@ -10,6 +11,7 @@ router.use(authenticate);
 
 // API routes (group routing modules here - no empty lines between)
 router.use("/api/hackers", hackersRoutes);
+router.use("/api/contact_messages", contactMessagesRoutes);
 
 // API error handlers (API routes must be registered before this)
 useAPIErrorHandlers(router);
@@ -18,22 +20,22 @@ useAPIErrorHandlers(router);
 router.use(clientRoutes);
 
 function useAPIErrorHandlers(router) {
-  // Handle API 404
-  router.use("/api/*", (req, res, next) => {
-    res.sendStatus(404);
-  });
+	// Handle API 404
+	router.use("/api/*", (req, res, next) => {
+		res.sendStatus(404);
+	});
 
-  // Handle API 500
-  router.use((err, req, res, next) => {
-    // If the error object doesn't exists
-    if (!err) {
-      return next();
-    }
+	// Handle API 500
+	router.use((err, req, res, next) => {
+		// If the error object doesn't exists
+		if (!err) {
+			return next();
+		}
 
-    // Log it
-    console.error(err.stack);
+		// Log it
+		console.error(err.stack);
 
-    // Redirect to error page
-    res.sendStatus(500);
-  });
+		// Redirect to error page
+		res.sendStatus(500);
+	});
 }
