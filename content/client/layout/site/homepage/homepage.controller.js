@@ -1,22 +1,24 @@
-(function () {
+(function() {
+	angular
+		.module("client.layout")
+		.controller("homepageController", HomepageController);
 
-    angular
-        .module('client.layout')
-        .controller('homepageController', HomepageController)
+	HomepageController.$inject = ["$location", "$anchorScroll", "$timeout"];
 
-    HomepageController.$inject = ['']
+	function HomepageController($location, $anchorScroll, $timeout) {
+		var vm = this;
 
-    function HomepageController() {
-        var vm = this
+		init();
 
-        init()
+		function init() {
+			_scrollToTop();
+		}
 
-        function init() {
-
-        }
-
-
-    }
-
-
+		function _scrollToTop() {
+			$timeout(() => {
+				$location.hash("top");
+				$anchorScroll();
+			});
+		}
+	}
 })();
