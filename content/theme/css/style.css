@@ -2118,6 +2118,10 @@ textarea.input-bg {
     border-color: #ff214f
 }
 
+.border-color-deep-teal {
+    color: rgb(0, 181, 159)
+}
+
 .border-color-transparent-pink {
     border-color: rgba(255, 33, 79, 0.45);
 }
