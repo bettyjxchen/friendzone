@@ -14,7 +14,8 @@
 				url: "/",
 				views: {
 					"content@site": {
-						templateUrl: "client/layout/site/homepage/homepage.html"
+						templateUrl: "client/layout/site/homepage/homepage.html",
+						controller: "homepageController as homeCtrl"
 					}
 				}
 			})
