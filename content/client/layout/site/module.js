@@ -23,7 +23,8 @@
 				url: "/about",
 				views: {
 					"content@site": {
-						templateUrl: "client/layout/site/about/about.html"
+						templateUrl: "client/layout/site/about/about.html",
+						controller: "aboutController as aboutCtrl"
 					}
 				}
 			})
@@ -31,8 +32,8 @@
 				url: "/faq",
 				views: {
 					"content@site": {
-						templateUrl: "client/layout/site/faq/faq.html"
-						//controller
+						templateUrl: "client/layout/site/faq/faq.html",
+						controller: "faqController as faqCtrl"
 					}
 				}
 			})
@@ -40,8 +41,8 @@
 				url: "/careers",
 				views: {
 					"content@site": {
-						templateUrl: "client/layout/site/careers/careers.html"
-						//controller
+						templateUrl: "client/layout/site/careers/careers.html",
+						controller: "careersController as careersCtrl"
 					}
 				}
 			})
@@ -49,8 +50,8 @@
 				url: "/contact",
 				views: {
 					"content@site": {
-						templateUrl: "client/layout/site/contact/contact.html"
-						//controller
+						templateUrl: "client/layout/site/contact/contact.html",
+						controller: "contactController as contactCtrl"
 					}
 				}
 			})
@@ -59,8 +60,8 @@
 				views: {
 					"content@site": {
 						templateUrl:
-							"client/layout/site/terms-and-conditions/terms-and-conditions.html"
-						//controller
+							"client/layout/site/terms-and-conditions/terms-and-conditions.html",
+						controller: "termsController as termsCtrl"
 					}
 				}
 			})
@@ -69,7 +70,6 @@
 				views: {
 					"content@site": {
 						templateUrl: "client/layout/site/others/404.html"
-						//controller
 					}
 				}
 			});
